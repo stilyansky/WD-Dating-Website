@@ -1,0 +1,96 @@
+#wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+fieldset {
+  background-color: lightyellow;
+  border: solid yellow 10px;
+  margin-bottom: 10px;
+  width: 720px; }
+
+label {
+  width: 180px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top; }
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto; }
+
+.center {
+  text-align: center; }
+
+textarea {
+  width: 360px;
+  height: 50px; }
+
+label:hover, input:hover {
+  font-size: 20px; }
+
+#preview {
+  width: 100px; }
+
+.required {
+  color: #ed1111; }
+
+.required-discribtion {
+  margin-top: 10px;
+  text-align: right; }
+
+.low {
+  width: 50px;
+  background-color: #A52C2A;
+  color: #ffffff;
+  padding: 5px;
+  margin: -5px 5px 5px 5px; }
+
+.high {
+  width: 50px;
+  background-color: #7F327E;
+  color: #ffffff;
+  padding: 5px;
+  margin: -5px 5px 5px 5px; }
+
+form.results {
+  margin-top: 100px; }
+
+#result {
+  display: none;
+  position: absolute;
+  background-color: rgba(205, 205, 205, 0.84);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0; }
+  #result legend {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 10px; }
+  #result label {
+    text-align: left;
+    display: block;
+    width: 500px; }
+  #result #color-display {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px; }
+  #result #closeBtn {
+    position: fixed;
+    left: 0;
+    padding: 10px;
+    margin-top: 22px;
+    width: 100%;
+    background-color: #3bb64f;
+    color: #fff; }
+  #result #closeBtn:hover {
+    background-color: #5aca6c; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dating Website</title>
+    <link rel="stylesheet" href="stylesheet/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="stylesheet/master.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="result">
+        <form class="results" action="index.html" method="post">
+          <fieldset>
+            <legend> Results </legend>
+            <table id="display-results">
+              <!-- Results will be displayed here through Javascript -->
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <div>
+        <h1>Please Enter Your Details For Our dating Website!</h1>
+        <form class="dating">
+<!-- ******** Your Face ********-->
+          <fieldset>
+            <legend>Your Face</legend>
+            <label for="your-image">Your image: <span class="required">*</span> </label>
+            <input type="file" name="face-images" value="Choose File" id="user-photo" required> <br/>
+            <label for="image-preview">Image preview:</label>
+            <img id="preview" src="http://placehold.it/100" alt="your-face" >
+          </fieldset>
+
+
+<!-- ******** Your Gender ********-->
+          <fieldset>
+            <legend>Your Gender Details</legend>
+            <label>Name: <span class="required">*</span></label>
+            <input type="text" name="Name" value="" placeholder="Your full name" required> <br/>
+            <label for="gender">Gender:<span class="required">*</span></label>
+              <input type="radio" name="Gender" value="male"> Male
+              <input type="radio" name="Gender" value="female"> Female<br/>
+            <label for="age">Age: <span class="required">*</span></label>
+            <input type="number" name="Age" value="18" required><br/>
+            <label for="date-of-birth">Date of birth:</label>
+            <input type="date" name="Date" value=""><br/>
+            <label for="color">Favourite color:</label>
+            <input type="color" name="Color" value="#000000"> <br/>
+            <label for="country">Which country:</label>
+            <select name="Country">
+              <option value="no-selection">no selection</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Romania">Romania</option>
+              <option value="Hungary">Hungary</option>
+              <option value="UK">UK</option>
+            </select>
+          </fieldset>
+
+<!-- ******** Your Indicators ********-->
+          <fieldset>
+            <legend>Your Indicators</legend>
+            <table>
+              <label for="height">Height: </label>
+              <label for="short" class="center low">Short </label>
+              <input type="range" name="Height" value="50" min="0" max="100">
+              <label for="tall" class="center high"> Tall</label> <br/>
+              <label for="height">Salary: </label>
+              <label for="short" class="center low">Poor </label>
+              <input type="range" name="Salary" value="50" min="0" max="100">
+              <label for="tall" class="center high"> Rich</label>
+            </table>
+          </fieldset>
+
+<!-- ******** Your Contact Info ********-->
+          <fieldset>
+            <legend>Your Contact Information</legend>
+            <table>
+              <label for="email">Email: <span class="required">*</span></label>
+              <input type="email" name="Email" value="" required></br>
+              <label for="mobile">Mobile</label>
+              <input type="tel" name="Mobile" value=""><br/>
+              <label for="Adress">Adress</label>
+              <textarea name="Adress" rows="2" cols="20"></textarea> </br>
+              <label for="method">Method to contact you:</label>
+              <input type="checkbox" name="Email" value="Email" id="email"> Email
+              <input type="checkbox" name="Whatsapp" value="Whatsapp" id="whatsapp">Whatsapp
+              <input type="checkbox" name="In-app" value="In-app-chat" id="in-app">In-app chat <br/>
+              <div for="required" class="required-discribtion"> <i>(<span class="required">*</span> - mean the field is required)</i></div>
+              <!--  Hidden element set on display:none - so that the form can not be submited-->
+              <input type="text" name="hidden" value="" class="hidden" required>
+              <!--  End of hidden element -->
+            </table>
+          </fieldset>
+<!-- ******** Submit ********-->
+        <input type="submit" name="submit" value="Submit" onclick="userInput()">
+        </form>
+        </div>
+    </div>
+
+<!-- ******** JavaScript ********-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
